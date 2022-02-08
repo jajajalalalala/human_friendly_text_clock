@@ -1,5 +1,3 @@
-from datetime import datetime
-
 
 class HumanFiendlyTextClock:
     pass
@@ -25,13 +23,13 @@ def get_human_friendly_text(time):
 
     result = time + SPACE
 
-    if min == 0:  # Case when time is at 1:00
+    if min == 0:  # when time is at 1:00
         result += num_to_words(hour).capitalize() + SPACE + CLOCK
-    elif min > 30:  # Case when minute is over past one
+    elif min > 30:  # when minute is over past 30
         hour += 1
         min = 60 - min
         result += num_to_words(min).capitalize() + SPACE + TO + SPACE + num_to_words(hour)
-    else:
+    else: # when the minute is less than 30
         result += num_to_words(min).capitalize() + SPACE + PAST + SPACE + num_to_words(hour)
     return result
 
