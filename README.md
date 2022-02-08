@@ -52,6 +52,6 @@ Write a REST service to expose the clock and allow an optional parameter to pass
 > python HumanClockREST.py
 ```
 * Access the default URL  http://127.0.0.1:5000/ to get the current time json time.
-* Attach the time to the end of the URL in HH:MM or H:MM format like http://127.0.0.1:5000/<time> to get the specified time JSON.
+* Attach the time to the end of the URL in HH:MM or H:MM format like http://127.0.0.1:5000/<specified_time> to get the specified time JSON.
 
 
